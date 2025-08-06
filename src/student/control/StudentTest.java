@@ -1,15 +1,17 @@
 package student.control;
-import exception.InvalidSettingException;
 import student.entity.Student;
 
 public class StudentTest {
 
 	public static void main(String[] args){
 		// TODO Auto-generated method stub
-		Student backduu = new Student("100", "백두현", "컴퓨터공학과", 4);
+		Student minsu = new Student("100", "김민수", "컴퓨터공학", 3);
+		int gradeForChange = 5;
 		
 		try {
-			backduu.setGrade(5);
+			System.out.println(minsu.getName() + " / " + minsu.getMajor() + " / " + minsu.getGrade() + "학년");
+			System.out.printf("%d학년으로 변경\n", gradeForChange);
+			minsu.setGrade(gradeForChange);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

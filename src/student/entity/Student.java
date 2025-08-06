@@ -1,5 +1,5 @@
 package student.entity;
-import exception.InvalidSettingException;
+import student.exception.*;
 
 public class Student{
 	private String studentId;
@@ -23,7 +23,7 @@ public class Student{
 	public void setGrade(int grade) throws InvalidSettingException
 	{ 
 		if(grade > 4) {
-			throw new InvalidSettingException("Student.java", "[error] grade는 1학년부터 4학년까지 세팅 가능합니다!");
+			throw new InvalidSettingException("학년은 1~4 사이여야 합니다.");
 		} else {
 			this.grade = grade; 
 		}
