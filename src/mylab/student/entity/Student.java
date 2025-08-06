@@ -1,5 +1,5 @@
-package student.entity;
-import student.exception.*;
+package mylab.student.entity;
+import mylab.student.exception.*;
 
 public class Student{
 	private String studentId;

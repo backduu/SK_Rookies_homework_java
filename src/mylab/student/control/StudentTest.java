@@ -1,5 +1,5 @@
-package student.control;
-import student.entity.Student;
+package mylab.student.control;
+import mylab.student.entity.Student;
 
 public class StudentTest {
 
